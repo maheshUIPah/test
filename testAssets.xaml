@@ -1,0 +1,238 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="testAssets" this:testAssets.FolderPath="Mahesh" this:testAssets.txtAssetName="TextAsset" this:testAssets.intAssetName="IntAsset" this:testAssets.credAssetName="CredAsset" this:testAssets.QueueName="testQ" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:r="clr-namespace:randomGenerator;assembly=randomGenerator" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="FolderPath" Type="InArgument(x:String)" />
+    <x:Property Name="txtAssetName" Type="InArgument(x:String)" />
+    <x:Property Name="intAssetName" Type="InArgument(x:String)" />
+    <x:Property Name="credAssetName" Type="InArgument(x:String)" />
+    <x:Property Name="QueueName" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>testAssets_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>randomGenerator</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>randomGenerator</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="testAssets" sap:VirtualizedContainerService.HintSize="1188.6666666666667,2586.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="OutArgument" Name="AssetValue" />
+      <Variable x:TypeArguments="x:String" Name="txtAssetValue" />
+      <Variable x:TypeArguments="x:String" Name="intAssetValue" />
+      <Variable x:TypeArguments="x:String" Name="userName" />
+      <Variable x:TypeArguments="ss:SecureString" Name="password" />
+      <Variable x:TypeArguments="ui:QueueItem" Name="transactionItem" />
+      <Variable x:TypeArguments="x:String" Name="str_TaskName" />
+      <Variable x:TypeArguments="x:String" Name="randomDescription" />
+      <Variable x:TypeArguments="x:Int32" Name="randomNo" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="[txtAssetName]" CacheStrategy="None" DisplayName="Get Asset" FolderPath="[FolderPath]" sap:VirtualizedContainerService.HintSize="518,176.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+      <ui:GetRobotAsset.Value>
+        <OutArgument x:TypeArguments="x:String">[txtAssetValue]</OutArgument>
+      </ui:GetRobotAsset.Value>
+    </ui:GetRobotAsset>
+    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="[intAssetName]" CacheStrategy="None" DisplayName="Get Asset" FolderPath="[FolderPath]" sap:VirtualizedContainerService.HintSize="518,176.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
+      <ui:GetRobotAsset.Value>
+        <OutArgument x:TypeArguments="x:String">[intAssetValue]</OutArgument>
+      </ui:GetRobotAsset.Value>
+    </ui:GetRobotAsset>
+    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[credAssetName]" CacheStrategy="None" DisplayName="Get Credential" FolderPath="[FolderPath]" sap:VirtualizedContainerService.HintSize="518,176.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[password]" Username="[userName]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="518,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Text Type Asset value - &quot; +txtAssetValue + Environment.NewLine +  &quot;Interger Asset value - &quot; + intAssetValue + Environment.NewLine + &quot;User Name from Cred Asset - &quot; + userName]" />
+    <r:Generate_Random_Name DisplayName="Generate Random Name" sap:VirtualizedContainerService.HintSize="518,282" sap2010:WorkflowViewState.IdRef="Generate_Random_Name_1" in_Bool_SuffixNumbers="True" in_firstNames="[{&quot;Task&quot;, &quot;Project&quot;, &quot;Operation&quot;, &quot;Job&quot;, &quot;Assignment&quot;, &quot;Workflow&quot;,&quot;Initiative&quot;,&quot;Mission&quot;,&quot;Campaign&quot;,&quot;Endeavor&quot;,&quot;Sprint&quot;,&quot;Process&quot;,&quot;Strategy&quot;,&quot;Activity&quot;,&quot;Plan&quot;,&quot;Challenge&quot;,&quot;Action&quot;,&quot;Phase&quot;,&quot;Process&quot;,&quot;Operation&quot;,&quot;Development&quot;,&quot;Challenge&quot;,&quot;Taskforce&quot;,&quot;Objective&quot;,&quot;Milestone&quot;,&quot;Venture&quot;}]" in_lastNames="[{&quot;Alpha&quot;, &quot;Beta&quot;, &quot;Gamma&quot;, &quot;Delta&quot;, &quot;Epsilon&quot;, &quot;Zeta&quot;, &quot;Sigma&quot;,&quot;Omega&quot;,&quot;Theta&quot;,&quot;Lambda&quot;,&quot;Kappa&quot;,&quot;Theta&quot;,&quot;Iota&quot;,&quot;Mu&quot;,&quot;Pi&quot;,&quot;Rho&quot;,&quot;Phi&quot;,&quot;Theta&quot;,&quot;Upsilon&quot;,&quot;Nu&quot;,&quot;Zeta&quot;,&quot;Xi&quot;,&quot;AlphaPlus&quot;,&quot;Prime&quot;,&quot;Quantum&quot;,&quot;Vortex&quot;,&quot;Horizon&quot;}]" out_RandomName="[str_TaskName]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </r:Generate_Random_Name>
+    <r:Generate_Random_Description DisplayName="Generate Random Description" sap:VirtualizedContainerService.HintSize="518,124" sap2010:WorkflowViewState.IdRef="Generate_Random_Description_1" out_RandomDescription="[randomDescription]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </r:Generate_Random_Description>
+    <ui:AddTransactionItem ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Transaction Item" FolderPath="[FolderPath]" sap:VirtualizedContainerService.HintSize="518,176.66666666666666" sap2010:WorkflowViewState.IdRef="AddTransactionItem_1" QueueType="[QueueName]" TransactionItem="[transactionItem]">
+      <ui:AddTransactionItem.TransactionInformation>
+        <InArgument x:TypeArguments="x:Int32" x:Key="TaskID">[new random().Next(1, 10001)]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="TaskName">[str_TaskName]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="TaskDescription">[randomDescription]</InArgument>
+      </ui:AddTransactionItem.TransactionInformation>
+    </ui:AddTransactionItem>
+    <Assign sap:VirtualizedContainerService.HintSize="518,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[randomNo]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">[new Random().next(1,10)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <If Condition="[randomNo &lt; 5]" sap:VirtualizedContainerService.HintSize="518,1157.3333333333333" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:SetTransactionStatus ContinueOnError="{x:Null}" Reason="{x:Null}" ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Set Transaction Status" ErrorType="Business" FolderPath="[FolderPath]" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="SetTransactionStatus_1" Status="Successful" TransactionItem="[transactionItem]">
+            <ui:SetTransactionStatus.Analytics>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+            </ui:SetTransactionStatus.Analytics>
+            <ui:SetTransactionStatus.Output>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+            </ui:SetTransactionStatus.Output>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:SetTransactionStatus>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="484,886.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <If Condition="[randomNo &lt; 8]" sap:VirtualizedContainerService.HintSize="450,826.6666666666666" sap2010:WorkflowViewState.IdRef="If_2">
+            <If.Then>
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,332" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:SetTransactionStatus ContinueOnError="{x:Null}" ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Set Transaction Status" ErrorType="Business" FolderPath="[FolderPath]" sap:VirtualizedContainerService.HintSize="382,272" sap2010:WorkflowViewState.IdRef="SetTransactionStatus_3" Reason="Failed with Business Exception" Status="Failed" TransactionItem="[transactionItem]">
+                  <ui:SetTransactionStatus.Analytics>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+                  </ui:SetTransactionStatus.Analytics>
+                  <ui:SetTransactionStatus.Output>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+                  </ui:SetTransactionStatus.Output>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:SetTransactionStatus>
+              </Sequence>
+            </If.Then>
+            <If.Else>
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,332" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:SetTransactionStatus ContinueOnError="{x:Null}" ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Set Transaction Status" ErrorType="Application" FolderPath="[FolderPath]" sap:VirtualizedContainerService.HintSize="382,272" sap2010:WorkflowViewState.IdRef="SetTransactionStatus_2" Reason="Failed with Application Exception" Status="Failed" TransactionItem="[transactionItem]">
+                  <ui:SetTransactionStatus.Analytics>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+                  </ui:SetTransactionStatus.Analytics>
+                  <ui:SetTransactionStatus.Output>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+                  </ui:SetTransactionStatus.Output>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:SetTransactionStatus>
+              </Sequence>
+            </If.Else>
+          </If>
+        </Sequence>
+      </If.Else>
+    </If>
+  </Sequence>
+</Activity>

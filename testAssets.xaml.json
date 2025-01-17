@@ -1,0 +1,69 @@
+{
+  "DisplayName": "testAssets",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "FolderPath",
+      "DisplayName": "FolderPath",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "Mahesh",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "txtAssetName",
+      "DisplayName": "txtAssetName",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "TextAsset",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "intAssetName",
+      "DisplayName": "intAssetName",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "IntAsset",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "credAssetName",
+      "DisplayName": "credAssetName",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "CredAsset",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "QueueName",
+      "DisplayName": "QueueName",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "testQ",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

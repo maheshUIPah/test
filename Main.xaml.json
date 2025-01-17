@@ -1,0 +1,81 @@
+{
+  "DisplayName": "Main",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "bool_AddQueueItems",
+      "DisplayName": "bool_AddQueueItems",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "True",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "int_HowManyToAdd",
+      "DisplayName": "int_HowManyToAdd",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "100",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "bool_FetchQueueItems",
+      "DisplayName": "bool_FetchQueueItems",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "True",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "int_HowManyToFetch",
+      "DisplayName": "int_HowManyToFetch",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "10000",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "FolderPath",
+      "DisplayName": "FolderPath",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "Mahesh",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "QueueName",
+      "DisplayName": "QueueName",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "testQ",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}
